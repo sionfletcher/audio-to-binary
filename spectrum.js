@@ -11,7 +11,6 @@ function setup() {
 }
 
 function draw() {
-   background(200);
 
    var spectrum = fft.analyze();
 
