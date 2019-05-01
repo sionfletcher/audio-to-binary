@@ -16,7 +16,7 @@ function draw() {
     var spectrum = fft.analyze();
     var body = document.body;
 
-    var total = spectrum.reduce(prev, curr => prev + curr, 0);
+    var total = spectrum.reduce((prev, curr) => prev + curr, 0);
 
     // Sensitivity between 0...255
     if ((total / spectrum.length) < 5) return;
